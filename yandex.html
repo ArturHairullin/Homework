@@ -7,23 +7,229 @@
         * {
            width: 100%;
         }
+        a {
+           text-decoration: none;
+        }
         .hat {
            height: 300px;
            background-color:white;
         }
-        .hat__fhalf {
+        .hat__first-half {
               height: 300px;
               width: 80%;
 
             
 
-           }
-         .hat__head{
-            height: 40px;
-
-            background-color: gray;
+         }
+         .link {
+            font-family: 'YS Text','Helvetica Neue',Arial,sans-serif;
+            color: black;
+         }
+         .text {
+            font-family: 'YS Text','Helvetica Neue',Arial,sans-serif;
 
          }
+         .link__geo {
+            position: absolute;
+            color: gray;
+         }
+         .link__text {
+            position: relative;
+            color: gray;
+            left:20px;
+            margin-right: 20px;
+         }
+         .first-half__head {
+            display: flex;
+            
+            height: 40px;
+
+            background-color: white;
+
+         }
+         .text_gray {
+            color: gray;
+
+         }
+         .head__bar {
+          display: flex;
+          height: 40px ;
+          width: 100px;
+           
+         }
+         .bar__cart-icon {
+            width: 40px;
+            height: 40px;
+            opacity: .24;
+            transition: opacity .15s ease-out;
+            background: url("data:image/svg+xml;charset=utf8,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.68 5.55H6.48l-.46-1.68a2.2 2.2 0 0 0-2.13-1.62H1.43a1.1 1.1 0 1 0 0 2.2H3.9l2.82 10.33a2.2 2.2 0 0 0 2.48 1.6l11.3-1.9a2.2 2.2 0 0 0 1.84-2.16V7.2c0-.91-.74-1.65-1.65-1.65zM5.83 22.05a2.2 2.2 0 1 0 0-4.4 2.2 2.2 0 0 0 0 4.4zm11 0a2.2 2.2 0 1 0 0-4.4 2.2 2.2 0 0 0 0 4.4z' fill='%23000'/%3E%3C/svg%3E") no-repeat center 8px;
+         }
+         .bar__bell-icon {
+            width: 40px;
+            height: 40px;
+            opacity: .24;
+            transition: opacity .15s ease-out;
+
+         }
+         .news-block {
+            display: flex;
+            height: 260px;
+         }
+
+         .news-block__news {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 260px;
+            width: 70%;
+            background-color:white;
+
+         }
+         .news__line {
+            color: black;
+         }
+         .news-block__weather-trafic {
+            height: 260px;
+            width: 30%;
+            
+
+         }
+         .link_now {
+            color: rgb(0, 89, 255);
+         }
+         .link_in-country {
+            color: rgb(14, 153, 199);
+         }
+         .link_korona {
+            color: orange;
+
+         }
+         .weather__icon {
+            width: 48px;
+            height: 48px;
+            
+            
+         }
+         .weather__text-now {
+            font-size: X-large;
+            position: relative;
+            bottom: -15px;
+         }
+         .weather__icon_small {
+            width:20px;
+            height: 20px;
+
+         }
+         .weather {
+            
+            height: 100px;
+
+         }
+         .weather__link {
+            display: flex;
+         }
+         .weather__head {
+            height: 30px;
+         }
+         .weather__info {
+            display: flex;
+            column-gap: 15px;
+            height: 70px;
+            
+         }
+         .weather__text_morning {
+            font-size: X-small;
+
+         }
+
+         .weather__text_day {
+            font-size: X-small;
+         }
+         .link__wrap {
+            display: flex;
+            
+            position: relative;
+            bottom:-40px;
+            right: 40px;
+         }
+         .link__head {
+            position: relative;
+            bottom: -20px;
+         }
+         .trafic {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100px;
+            
+         }
+         .trafic__icon {
+            height: 40px;
+            width: 40px;
+         }
+         
+         .trafic__level {
+            font-size:X-large;
+         }
+         .trafic__text {
+            font-size: small;
+         }
+         .service__links {
+            position: relative;
+            left: -130px;
+            display: flex;
+            
+         }
+         .service__link {
+            display: flex;
+            flex-direction: column;
+         }
+         .link__icon {
+            position: relative;
+            right: -25px;
+            height: 40px;
+            width: 40px;
+         }
+         .link__text {
+            
+         }
+         .logo__icon {
+            width: 150px;
+            height: 40px;
+         }
+         .service__finder {
+            display: flex;
+         }
+         .service__finder-row {
+            position: relative;
+            right: 175px;
+            height: 40px;
+            width: 2100px;
+            border: 2px solid orange;
+            border-radius: 10px;
+           
+         }
+         .service__advertisment {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 5px;
+            height: 70px;
+            width: 83%;
+            border: 2px solid grey;
+            border-radius: 10px;
+            
+         }
+         .service__advertisment-text {
+            position: relative;
+            left: 45%;
+         }
+         
+         
+         
+
+         
+
 
 
 
@@ -31,28 +237,181 @@
    </head>
    <body>
       <div class="hat">
-         <div class="hat__fhalf">
-            <header class="hat__head"></header>
-            <div class="hat__news-block">
-               <nav class="hat__news"></nav>
-               <div class="hat__weather-trafic">
-                  <div class="hat__weather"></div>
-                  <div class="hat__trafic"></div>
+         <div class="hat__first-half first-half">
+            <header class="first-half__head head">
+               <div class="head__wrap">
+               <a href="" class="head__country-link link">
+                  <svg class="link__geo" xmlns="http://www.w3.org/2000/svg" width="16" height="16" ><path fill="currentColor" d="M13.07 3.58l-4 9.98a.5.5 0 0 1-.95-.06L7 9 2.5 7.88a.5.5 0 0 1-.06-.95l9.98-4a.5.5 0 0 1 .65.65z"></path></svg>
+               <span class="link__text text">Москва</span>
+               </a>
+               <span class="head__date date text text_gray">19 октября,вторник 19:23</span>
+               </div>
+               <div class="head__bar">
+                  <a href="" class="bar__cart-link link">
+                     <div class="bar__cart-icon"></div>
+                  </a>
+                  <a href="" class="bar__bell-link link">
+                     <div class="bar__bell-icon">
+                        <svg class="notifier__icon-svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36"  focusable="false"><path class="notifier__clapper" d="M18 30a3 3 0 0 0 3-3c0-1.657-1.5 0-3-17-1.5 17-3 15.343-3 17a3 3 0 0 0 3 3z"></path><path class="notifier__bell" d="M15.687 12.5l.3-.164a1.5 1.5 0 0 0 .75-1.021l.142-.712a.75.75 0 0 1 .736-.603h.77a.75.75 0 0 1 .736.603l.142.712a1.5 1.5 0 0 0 .75 1.02l.3.165a5.586 5.586 0 0 1 3.24 4.47l.54 4.863c.1.906.563 1.733 1.282 2.292l.354.275a1.5 1.5 0 0 1 .534 1.548L26.25 26a1.32 1.32 0 0 1-1.28 1H11.03a1.32 1.32 0 0 1-1.28-1l-.013-.052a1.5 1.5 0 0 1 .534-1.548l.354-.275a3.375 3.375 0 0 0 1.282-2.292l.54-4.864a5.586 5.586 0 0 1 3.24-4.469z"></path></svg>
+                     </div>
+                  </a>
+               </div>
+
+            </header>
+            <div class="first-half__news-block news-block">
+               <nav class="news-block__news news">
+                  <span class="news__head">
+                     <a href="" class="news__link link_now">
+                        Сейчас в СМИ
+                     </a>
+                     <a href="" class="news__link link link_in-country">в Москве</a>
+                     <a href="" class="news__link link link_korona">Коронавирус</a>
+                     <a href="" class="news__link link link_options">:</a>
+                  </span>
+                  <a href="" class="news__line">
+                     <span class="news__text text">Вице-премьер Голикова предложила Путину ввести нерабочие дни с 30 октября по 7 ноября</span>
+                  </a>
+                  <a href="" class="news__line">
+                     <span class="news__text text">«Зенит» уступил «Ювентусу» в матче группового этапа Лиги чемпионов</span>
+                  </a>
+                  <a href="" class="news__line">
+                     <span class="news__text text">РФПИ ожидает одобрение «Спутника V» ВОЗ в ближайшие два месяца</span>
+                  </a>
+                  <a href="" class="news__line">
+                     <span class="news__text text">Часть задержанных за шпионаж в Турции якобы оказались россиянами</span>
+                  </a>
+                  <a href="" class="news__line">
+                     <span class="news__text text">Умер телеведущий «Дождя» Дмитрий Казнин</span>
+                  </a>
+                  <div class="news__valuta valuta">
+                     <span class="valuta__usd">
+                        <a href="" class="valuta__link link">USD</a>
+                        <span class="valuta__info text">70,84−0,07</span>
+                     </span>
+                     <span class="valuta__eur">
+                        <a href="" class="valuta__link link">EUR</a>
+                        <span class="valuta__info text">82,52+0,02+0,02</span>
+                     </span>
+                     <span class="valuta__oil">
+                        <a href="" class="valuta__link link">НЕФТЬ</a>
+                        <span class="valuta__info text">85,86+0,95%+0,95%</span>
+                     </span>
+                  </div>
+
+               </nav>
+               <div class="news-block__weather-trafic weather-trafic">
+                  <div class="weather-trafic__weather weather">
+                     <div class="weather__head">
+                        <a href="" class="weather__link link">
+                           <span class="weather__text-weather text">Погода</span>
+                        </a>
+                        <a href="" class="weather__link link">
+                           <span class="weather__text-map text">Карта осадков</span>
+                        </a>
+                     </div>
+                     <nav class="weather__info">
+                        <a href="" class="weather__link link">
+                           <img class="weather__icon" src="rain.svg"></img>
+                           <span class="weather__text-now">+4°
+                           </span>
+                        </a>
+                        <a href="" class="weather__link link">
+                           <span class="link__head">утро</span>
+
+                           <span class="link__wrap" >
+                           <img class="weather__icon weather__icon_small" src="rain.svg"></img>
+                           <span class="weather__text-morning">+11°
+                           </span>
+                           </span>
+                        </a>
+                        <a href="" class="weather__link link">
+                           <span class="link__head">день</span>
+                           <span class="link__wrap">
+                           <img class="weather__icon weather__icon_small" src="rain.svg"></img>
+                           <span class="weather__text-day">+14°
+                           </span>
+                           </span>
+                        </a>
+                     </nav>
+                    
+                  </div>
+                  <div class="weather-trafic__trafic trafic">
+                     <span class="trafic__head">
+                        <a href="" class="trafic__trafic-link link">Пробки</a>
+                        <a href="" class="trafic__metro-link link">Метро</a>
+                        <a href="" class="trafic__table-link link">Расписания</a>
+                     </span>
+                     <div class="trafic__info">
+                        <a href="" class="trafic__link link">
+                        <img class="trafic__icon" src="trafic.svg"></img>
+                        <span class="trafic__level">0</span>
+                        </a>
+                        <a href="" class="trafic__link link">
+                        <span class="trafic__text text">до 12 ч. дороги свободны</span>
+                        </a>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>
-         <div class="hat__shalf">
-            <div class="hat__sign"></div>
-            <div class="hat_plus"></div>
-            <div class="hat_korona-news"></div>
+         <div class="hat__second-half second-half">
+            <div class="second-half__sign"></div>
+            <div class="second-half__plus"></div>
+            <div class="second-half_korona-news"></div>
          </div>
          
 
       </div>
       <div class="service">
-         <nav class="service__links"></nav>
-         <div class="service__finder"></div>
-         <div class="service__advertisment"></div>
+         <nav class="service__links">
+            <a href="" class="service__link">
+
+            </a>
+            <a href="" class="service__link link">
+               <img src="market_new2.svg"  class="link__icon">
+               <span class="link__text">Маркет</span>
+            </a>
+            <a href="" class="service__link link">
+               <img src="video_new.svg"  class="link__icon">
+               <span class="link__text">Видео</span>
+            </a>
+            <a href="" class="service__link link">
+               <img src="images_new.svg"  class="link__icon">
+               <span class="link__text">Картинки</span>
+            </a>
+            <a href="" class="service__link link">
+               <img src="news_new.svg"  class="link__icon">
+               <span class="link__text">Новости</span>
+            </a>
+            <a href="" class="service__link link">
+               <img src="maps_new3.svg"  class="link__icon">
+               <span class="link__text">Карты</span>
+            </a>
+            <a href="" class="service__link link">
+               <img src="translate_new.svg"  class="link__icon">
+               <span class="link__text">Переводчик</span>
+            </a>
+            <a href="" class="service__link link">
+               <img src="music_new.svg"  class="link__icon">
+               <span class="link__text">Музыка</span>
+            </a>
+            <a href="" class="service__link link">
+               <img src="market_new2.svg"  class="link__icon">
+               <span class="link__text">ещё</span>
+            </a>
+         </nav>
+         <div class="service__finder">
+            <a href="" class="service__logo logo">
+               <img src="Yandex_logo_2021_Russian.svg.png" class="logo__icon">
+            </a>
+            <div class="service__finder-row">
+            </div>
+
+
+         </div>
+         <div class="service__advertisment">
+            <span class="service__advertisment-text text">Рекламный блок</span>
+         </div>
       </div>
        <div class="advert">
           <div class="advert__block"></div>
