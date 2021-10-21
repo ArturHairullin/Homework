@@ -2,35 +2,39 @@
 <html>
     <head>
         <style>
-            .check{
+            .check {
                 display: flex;
                 flex-direction: column;
+                
 
                 
                 
             }
-            .check__box{
-                position: absolute;
+            .box__input {
+                
                 appearance: none;
             }
-            .check__mark{
+            .check__box {
                 padding-left: 10px;
             }
-            .check__circle{
+            .box__input {
+                
+                display: block;
                 position: relative;
-                left: -11px;
-                bottom: -12px;
+                left: -15px;
+                bottom: -16px;
                 width: 7px;
                 height: 7px;
                 background-color: white;
                 border-radius: 1px;
                 box-shadow:0 0 0 1px blue;
             }
-            .check__box:checked+.check__circle{
+            .box__input:checked  {
+                
                 background-color: blue;
                 
             }
-            .check__box:checked + .check__circle::after{
+            .box__input:checked::after {
                 content: "";
                 position: absolute;
                 border-radius: 40%;
@@ -41,22 +45,52 @@
                 width: 5px;
                 height: 5px;
                 background-color:white;
+                transform: skewY(45deg);
+                transform: skewX(45deg);
+                
                 
             }
-            .check__box:focus + .check__circle{
+            .box__input:checked::before {
+                content: "";
+                position: absolute;
+                border-radius: 40%;
+                
+
+                top: 1px;  
+                left: 1px;  
+                width: 5px;
+                height: 5px;
+                background-color:white;
+                transform: skewY(-45deg);
+                transform: skewX(-45deg);
+                
+                
+            }
+            .box__input:focus {
                 
                 box-shadow:0 0 0 1px blue, 0 0 0 2px rgb(14, 243, 63);
                 
             
             }
-            .check__box:disabled + .check__circle{
+            .box__input:disabled {
            
             box-shadow: 0 0 0 1px gray;
             }
 
-            .check__box:disabled:checked + .check__circle{
+            .box__input:disabled:checked {
             background-color: gray;
             box-shadow: 0 0 0 1px gray;
+            }
+            .box__text {
+                font-family: 'Courier New', Courier, monospace;
+                
+            }
+            .box__input:enabled +.box__text:hover {
+               color: blue;
+               font-size: large; 
+            }
+            .box__input:disabled +.box__text{
+                color: gray;
             }
             
 
@@ -64,25 +98,22 @@
     </head>
     <body>
         <div class="check">
-            <label class="check__mark">
-                <input class="check__box" type="checkbox">
-                <div class="check__circle"></div>
-                First
+            <label class="check__box box">
+                <input class="box__input" type="checkbox">
+                <span class="box__text">First</span>
             </label>
-            <label class="check__mark">
-                <input class="check__box" type="checkbox" checked>
-                <div class="check__circle"></div>
-                Second
+            
+            <label class="check__box box">
+                <input class="box__input" type="checkbox" checked>
+                <span class="box__text">Second</span>
             </label>
-            <label class="check__mark">
-                <input class="check__box" type="checkbox" disabled>
-                <div class="check__circle"></div>
-                Third
+            <label class="check__box box">
+                <input class="box__input" type="checkbox" disabled>
+                <span class="box__text">Third</span>
             </label>
-            <label class="check__mark">
-                <input class="check__box" type="checkbox" disabled checked>
-                <div class="check__circle"></div>
-                Fourth
+            <label class="check__box box">
+                <input class="box__input" type="checkbox" disabled checked>
+                <span class="box__text">Fourth</span>
             </label>
             
         </div>
