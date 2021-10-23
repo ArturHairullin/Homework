@@ -7,12 +7,16 @@
         * {
            width: 100%;
         }
+        body {
+           background-color: whitesmoke;
+        }
         a {
            text-decoration: none;
         }
         .hat {
+           display: flex;
            height: 300px;
-           background-color:white;
+           
         }
         .hat__first-half {
               height: 300px;
@@ -21,6 +25,14 @@
             
 
          }
+         .hat__second-half {
+            position: relative;
+            left: 60px;
+            height: 300px;
+            width: 20%;
+            
+         }
+         
          .link {
             font-family: 'YS Text','Helvetica Neue',Arial,sans-serif;
             color: black;
@@ -29,6 +41,9 @@
             font-family: 'YS Text','Helvetica Neue',Arial,sans-serif;
 
          }
+         .link :hover {
+            color: red;
+         } 
          .link__geo {
             position: absolute;
             color: gray;
@@ -39,12 +54,13 @@
             left:20px;
             margin-right: 20px;
          }
+         
          .first-half__head {
             display: flex;
             
             height: 40px;
 
-            background-color: white;
+            
 
          }
          .text_gray {
@@ -82,7 +98,7 @@
             justify-content: space-between;
             height: 260px;
             width: 70%;
-            background-color:white;
+            
 
          }
          .news__line {
@@ -129,7 +145,19 @@
             display: flex;
          }
          .weather__head {
+            display: flex;
             height: 30px;
+         }
+         .weather__text-weather {
+            color: blue;
+            font-size: large;
+         }
+         .weather__text-map {
+            position: relative;
+            right: 50px;
+            top:4px;
+            color: rgb(12, 131, 170);
+            font-size: small;
          }
          .weather__info {
             display: flex;
@@ -174,6 +202,14 @@
          .trafic__text {
             font-size: small;
          }
+         .trafic__text_blue {
+            color: rgb(12, 131, 170);
+         }
+         .trafic__text_big {
+           font-size: large;
+           color: blue;
+         }
+         
          .service__links {
             position: relative;
             left: -130px;
@@ -183,6 +219,7 @@
          .service__link {
             display: flex;
             flex-direction: column;
+            color: black;
          }
          .link__icon {
             position: relative;
@@ -190,24 +227,74 @@
             height: 40px;
             width: 40px;
          }
-         .link__text {
-            
+         .service__link:hover .link__icon{
+            bottom: 20px;
          }
+         
          .logo__icon {
             width: 150px;
             height: 40px;
          }
+         .link__text_black {
+            color: black;
+         }
          .service__finder {
             display: flex;
          }
-         .service__finder-row {
+         .form__border {
+            display: flex;
             position: relative;
-            right: 175px;
+            justify-content: space-between;
+            right: 168px;
             height: 40px;
-            width: 2100px;
+            width: 690px;
             border: 2px solid orange;
             border-radius: 10px;
+            background-color: orange;
            
+         }
+         form {
+           
+         }
+         .form__find-wrap {
+            position: relative;
+            right: 3px;
+            bottom: 2px;
+            width: 600px;
+            height: 34px;
+            border: 2px solid orange;
+            border-radius: 10px 0 0 10px;
+            background-color: orange;
+            
+         }
+         .form__submit {
+            position: relative;
+            left: 1px;
+            height: 100%;
+            border: 2px solid orange;
+            border-radius: 10px;
+            background-color: orange;
+            cursor:pointer;
+         }
+         .form__submit-text {
+            font-size: large;
+            cursor: pointer;
+         }
+         .form__find-field {
+            height: 100%;
+            border: 2px solid orange;
+            border-radius: 10px;
+         }
+         
+         .form__submit-wrap {
+            position: relative;
+            bottom: 2px;
+            left: 1px;
+            width: 82px;
+            height: 40px;
+            background-color: orange;
+            border: 2px solid orange;
+            border-radius: 0 10px  10px 0;
          }
          .service__advertisment {
             display: flex;
@@ -224,7 +311,56 @@
             position: relative;
             left: 45%;
          }
+         .sign {
+            padding-bottom: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 135px;
+            height: 120px;
+            background-color: white;
+            border: 2px solid white;
+            border-radius: 10px;
+
+         }
+         .sign__signer {
+            height: 25%;
+            background-color: rgb(163, 156, 156);
+            border: 2px solid  rgb(163, 156, 156);
+            border-radius: 10px;
+         }
+         .sign__icon {
+            height: 20px;
+            width: 20px;
+         }
+         .sign__mail {
+            height: 25%;
+         }
+         .sign__disc {
+            bottom: 5px;
+            height: 25%;
+         }
+         .plus__link:hover {
+            position: relative;
+            right: 30px;
+            
+         }
          
+         .plus__link {
+
+            height: 30px;
+            width: 135px;
+            background-color: white;
+            border: 2px solid white;
+            border-radius: 10px;
+         }
+         .plus__icon {
+            height: 15px;
+            width: 15px;
+         }
+         .plus__text {
+            font-size: small;
+         }
          
          
 
@@ -241,7 +377,7 @@
             <header class="first-half__head head">
                <div class="head__wrap">
                <a href="" class="head__country-link link">
-                  <svg class="link__geo" xmlns="http://www.w3.org/2000/svg" width="16" height="16" ><path fill="currentColor" d="M13.07 3.58l-4 9.98a.5.5 0 0 1-.95-.06L7 9 2.5 7.88a.5.5 0 0 1-.06-.95l9.98-4a.5.5 0 0 1 .65.65z"></path></svg>
+               <svg class="link__geo" xmlns="http://www.w3.org/2000/svg" width="16" height="16" ><path fill="currentColor" d="M13.07 3.58l-4 9.98a.5.5 0 0 1-.95-.06L7 9 2.5 7.88a.5.5 0 0 1-.06-.95l9.98-4a.5.5 0 0 1 .65.65z"></path></svg>
                <span class="link__text text">Москва</span>
                </a>
                <span class="head__date date text text_gray">19 октября,вторник 19:23</span>
@@ -261,39 +397,46 @@
             <div class="first-half__news-block news-block">
                <nav class="news-block__news news">
                   <span class="news__head">
-                     <a href="" class="news__link link_now">
-                        Сейчас в СМИ
+                     <a href="" class="news__link link_now link">
+                        <span class="news__text">Сейчас в СМИ</span>
                      </a>
-                     <a href="" class="news__link link link_in-country">в Москве</a>
-                     <a href="" class="news__link link link_korona">Коронавирус</a>
-                     <a href="" class="news__link link link_options">:</a>
+                     <a href="" class="news__link link link_in-country "><span class="news__text">в Москве</span> </a>
+                     <a href="" class="news__link link link_korona "><span class="news__text">Коронавирус</span></a>
+                     <a href="" class="news__link link link_options "><span class="news__text">:</span></a>
                   </span>
-                  <a href="" class="news__line">
+                  <a href="" class="news__line link">
                      <span class="news__text text">Вице-премьер Голикова предложила Путину ввести нерабочие дни с 30 октября по 7 ноября</span>
                   </a>
-                  <a href="" class="news__line">
+                  <a href="" class="news__line link">
                      <span class="news__text text">«Зенит» уступил «Ювентусу» в матче группового этапа Лиги чемпионов</span>
                   </a>
-                  <a href="" class="news__line">
+                  <a href="" class="news__line link">
                      <span class="news__text text">РФПИ ожидает одобрение «Спутника V» ВОЗ в ближайшие два месяца</span>
                   </a>
-                  <a href="" class="news__line">
+                  <a href="" class="news__line link">
                      <span class="news__text text">Часть задержанных за шпионаж в Турции якобы оказались россиянами</span>
                   </a>
-                  <a href="" class="news__line">
+                  <a href="" class="news__line link">
                      <span class="news__text text">Умер телеведущий «Дождя» Дмитрий Казнин</span>
                   </a>
                   <div class="news__valuta valuta">
                      <span class="valuta__usd">
-                        <a href="" class="valuta__link link">USD</a>
+                        <a href="" class="valuta__link link">
+                           <span class="valuta__text"> USD </span>
+                        </a>
                         <span class="valuta__info text">70,84−0,07</span>
                      </span>
                      <span class="valuta__eur">
-                        <a href="" class="valuta__link link">EUR</a>
+                        <a href="" class="valuta__link link">
+                           <span class="valuta__text">EUR</span>
+                        </a>
                         <span class="valuta__info text">82,52+0,02+0,02</span>
                      </span>
                      <span class="valuta__oil">
-                        <a href="" class="valuta__link link">НЕФТЬ</a>
+                        <a href="" class="valuta__link link">
+                           <span class="valuta__text">НЕФТЬ</span>
+
+                           </a>
                         <span class="valuta__info text">85,86+0,95%+0,95%</span>
                      </span>
                   </div>
@@ -337,9 +480,15 @@
                   </div>
                   <div class="weather-trafic__trafic trafic">
                      <span class="trafic__head">
-                        <a href="" class="trafic__trafic-link link">Пробки</a>
-                        <a href="" class="trafic__metro-link link">Метро</a>
-                        <a href="" class="trafic__table-link link">Расписания</a>
+                        <a href="" class="trafic__trafic-link link">
+                           <span class="trafic__text trafic__text_blue trafic__text_big">Пробки</span>
+                        </a>
+                        <a href="" class="trafic__metro-link link">
+                           <span class="trafic__text trafic__text_blue">Метро</span>
+                        </a>
+                        <a href="" class="trafic__table-link link">
+                           <span class="trafic__text trafic__text_blue">Расписания</span>
+                        </a>
                      </span>
                      <div class="trafic__info">
                         <a href="" class="trafic__link link">
@@ -355,8 +504,27 @@
             </div>
          </div>
          <div class="hat__second-half second-half">
-            <div class="second-half__sign"></div>
-            <div class="second-half__plus"></div>
+            <div class="second-half__sign sign">
+               <a href="" class="sign__signer ">
+                  <img src="yalogo.jpg" class="sign__icon">
+                  <span class="sign__text text">Войти</span>
+               </a>
+               <a href="" class="sign__mail link">
+                  <img src="orig.png" class="sign__icon">
+                  <span class="sign__text">Почта</span>
+               </a>
+               <a href="" class="sign__disk link">
+                  <img src="8ac54b23845bdd65344a0243de4dc7c5.jpg" class="sign__icon">
+                  <span class="sign__text text">Диск </span>
+               </a>
+
+            </div>
+            <div class="second-half__plus plus">
+               <a href="" class="plus__link ">
+                  <img src="plus.jpg" class="plus__icon">
+                  <span class="plus__text"> Попробовать Плюс</span>
+               </a>
+            </div>
             <div class="second-half_korona-news"></div>
          </div>
          
@@ -369,53 +537,68 @@
             </a>
             <a href="" class="service__link link">
                <img src="market_new2.svg"  class="link__icon">
-               <span class="link__text">Маркет</span>
+               <span class="link__text link__text_black">Маркет</span>
             </a>
             <a href="" class="service__link link">
                <img src="video_new.svg"  class="link__icon">
-               <span class="link__text">Видео</span>
+               <span class="link__text link__text_black">Видео</span>
             </a>
             <a href="" class="service__link link">
                <img src="images_new.svg"  class="link__icon">
-               <span class="link__text">Картинки</span>
+               <span class="link__text link__text_black">Картинки</span>
             </a>
             <a href="" class="service__link link">
                <img src="news_new.svg"  class="link__icon">
-               <span class="link__text">Новости</span>
+               <span class="link__text link__text_black">Новости</span>
             </a>
             <a href="" class="service__link link">
                <img src="maps_new3.svg"  class="link__icon">
-               <span class="link__text">Карты</span>
+               <span class="link__text link__text_black">Карты</span>
             </a>
             <a href="" class="service__link link">
                <img src="translate_new.svg"  class="link__icon">
-               <span class="link__text">Переводчик</span>
+               <span class="link__text link__text_black">Переводчик</span>
             </a>
             <a href="" class="service__link link">
                <img src="music_new.svg"  class="link__icon">
-               <span class="link__text">Музыка</span>
+               <span class="link__text link__text_black">Музыка</span>
             </a>
             <a href="" class="service__link link">
                <img src="market_new2.svg"  class="link__icon">
-               <span class="link__text">ещё</span>
+               <span class="link__text link__text_black">ещё</span>
             </a>
          </nav>
          <div class="service__finder">
             <a href="" class="service__logo logo">
                <img src="Yandex_logo_2021_Russian.svg.png" class="logo__icon">
             </a>
-            <div class="service__finder-row">
+            <form action="" class="service__form form">
+            <div class="form__border">
+               
+                  <div class="form__find-wrap">
+                     <input type="text" class="form__find-field">
+
+                  </div>
+                  <div class="form__submit-wrap">
+                        <button type="submit" id="sub" class="form__submit">
+                        <label for="sub" class="form__submit-text text">Найти</label>
+                     
+                  </div>
             </div>
+            </form>
 
 
          </div>
-         <div class="service__advertisment">
+
+         <a href=""class="service__advertisment link">
             <span class="service__advertisment-text text">Рекламный блок</span>
-         </div>
+         </a>
       </div>
        <div class="advert">
+          <a href="" class="advert__link">
           <div class="advert__block"></div>
           <div class="advert__dzen"></div>
+          </a>
        </div>
    </body>  
 
