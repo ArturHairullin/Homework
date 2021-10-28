@@ -6,6 +6,7 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
       
       <style>
+        
         * {
            width: 100%;
         }
@@ -127,6 +128,11 @@
             
             
          }
+         .weather-trafic {
+            display: flex;
+            flex-direction: column;
+            row-gap: 35px;
+         }
          .weather__text-now {
             font-size: X-large;
             position: relative;
@@ -162,7 +168,7 @@
          }
          .weather__info {
             display: flex;
-            column-gap: 15px;
+            column-gap: -25px;
             height: 70px;
             
          }
@@ -174,17 +180,22 @@
          .weather__text_day {
             font-size: X-small;
          }
+         
          .link__wrap {
             display: flex;
             
             position: relative;
-            bottom:-40px;
-            right: 40px;
+            bottom: -30px;
+           
+            
          }
+         
          .link__head {
             position: relative;
-            bottom: -35px;
+            bottom: -25px;
+            left: 38px;
          }
+         
          .trafic {
             display: flex;
             flex-direction: column;
@@ -363,6 +374,17 @@
          .plus__text {
             font-size: small;
          }
+         ._later {
+            transform: scale(0.8,0.8);
+         }
+         ._now {
+            transform: scale(1.5,1.5);
+         }
+         ._near {
+            position: relative;
+            top: 13px;
+            left: 24px;
+         }
          
          
 
@@ -456,28 +478,28 @@
                            <span class="link__text text">Карта осадков</span>
                         </a>
                      </div>
-                     <nav class="weather__info">
-                        <a href="" class="info__link link">
+                     <nav class="weather__info info">
+                        <a href="" class="info__link link _now">
                            <span class="link__wrap" >
                            <img class="link__icon" src="rain.svg"></img>
-                           <span class="link__text text">+4°
+                           <span class="link__text text _near">+4°
                            </span>
                            </span>
                         </a>
-                        <a href="" class="info__link link">
+                        <a href="" class="info__link link _later">
                            <span class="link__head">утро</span>
 
                            <span class="link__wrap" >
-                           <img class="link__icon _later" src="rain.svg"></img>
-                           <span class="link__text text">+11°
+                           <img class="link__icon " src="rain.svg"></img>
+                           <span class="link__text text _near">+11°
                            </span>
                            </span>
                         </a>
-                        <a href="" class="info__link link">
+                        <a href="" class="info__link link _later">
                            <span class="link__head">день</span>
                            <span class="link__wrap">
-                           <img class="link__icon _later" src="rain.svg"></img>
-                           <span class="link__text text">+14°
+                           <img class="link__icon " src="rain.svg"></img>
+                           <span class="link__text text _near">+14°
                            </span>
                            </span>
                         </a>
@@ -489,7 +511,7 @@
                         <a href="" class="head__link link">
                            <span class="link__text text _main">Пробки</span>
                         </a>
-                        <a href="" class="haed__link link">
+                        <a href="" class="head__link link">
                            <span class="link__text text">Метро</span>
                         </a>
                         <a href="" class="head__link link">
