@@ -1,0 +1,68 @@
+.link {
+  font-family: 'YS Text','Helvetica Neue',Arial,sans-serif;
+  color: black;
+
+  & :hover {
+    color: red;
+  }
+  &__geo-icon {
+    position: absolute;
+    color: gray;
+  }
+  &__text {
+    position: relative;
+    color: black;
+    left:20px;
+    margin-right: 20px;
+  }
+
+  &__wrap {
+    display: flex;
+
+    position: relative;
+    bottom: -30px;
+
+
+  }
+
+  &__top {
+    position: relative;
+    bottom: -25px;
+    left: 38px;
+  }
+
+  &__icon {
+    position: relative;
+    right: -25px;
+    height: 40px;
+    width: 40px;
+
+    &._small {
+      position: relative;
+      right: 1px;
+      width: 30px;
+      height: 30px;
+    }
+
+
+  }
+
+  &._later {
+    transform: scale(0.8,0.8);
+  }
+  &._now {
+    transform: scale(1.5,1.5);
+  }
+  &._advertisement {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+    height: 70px;
+    width: 83%;
+    border: 2px solid grey;
+    border-radius: 10px;
+
+  }
+}
+
