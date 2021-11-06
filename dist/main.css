@@ -1,0 +1,392 @@
+
+
+.first-half__head {
+  display: flex;
+  height: 40px;
+}
+.hat {
+  display: flex;
+  height: 300px;
+  margin-bottom: 30px;
+}
+.hat__first-half {
+  height: 300px;
+  width: 80%;
+}
+.hat__second-half {
+  position: relative;
+  left: 40px;
+  height: 300px;
+  width: 20%;
+}
+.service {
+  display: flex;
+}
+.service__link {
+  width: 11%;
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+.service__link:hover ._jumping {
+  bottom: 20px;
+}
+.service__finder {
+  display: flex;
+}
+.news-block {
+  display: flex;
+  height: 260px;
+}
+.news-block__news {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 260px;
+  width: 70%;
+}
+.news-block__weather-trafic {
+  height: 260px;
+  width: 30%;
+}
+.head__bar {
+  display: flex;
+  height: 40px;
+  width: 100px;
+}
+.head__link:hover ._hovered-red {
+  color: #ff2507;
+}
+.head__wrap {
+  position: relative;
+  left: -50px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.trafic {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+}
+.trafic__head {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  align-items: center;
+}
+.trafic__info {
+  display: inline-grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  height: 70px;
+}
+.weather {
+  height: 100px;
+}
+.weather__link {
+  display: flex;
+}
+.weather__head {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  height: 30px;
+}
+.weather__info {
+  position: relative;
+  bottom: 35px;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  height: 70px;
+}
+.weather-trafic {
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+}
+.link {
+  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+  color: black;
+}
+.link :hover {
+  color: #ff2507;
+}
+.link :hover ._hovered-red {
+  color: #ff2507;
+}
+.link__geo-icon {
+  height: 16px;
+  width: 16px;
+  color: gray;
+}
+.link__text {
+  position: relative;
+  color: black;
+  left: 20px;
+  margin-right: 20px;
+}
+.link__wrap {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  bottom: -30px;
+}
+.link__top {
+  position: relative;
+  bottom: -37px;
+  left: 38px;
+  color: gray;
+}
+.link__icon {
+  margin-top: 10px;
+  position: relative;
+  right: -25px;
+  height: 40px;
+  width: 40px;
+}
+.link__icon._hovered-gray :hover {
+  fill: black;
+  color: black;
+}
+.link__icon._mini {
+  height: 15px;
+  width: 15px;
+}
+.link__icon._jumping {
+  bottom: 0;
+  transition: all 1s ease-out;
+}
+.link__icon._small {
+  position: relative;
+  right: 1px;
+  width: 20px;
+  height: 20px;
+}
+.link__icon._gray {
+  fill: gray;
+  color: gray;
+}
+.link__icon._card-mod {
+  transform: scale(0.8, 0.8);
+  position: relative;
+  bottom: 10px;
+  right: 1px;
+}
+.link._later {
+  position: relative;
+  right: 30px;
+  transform: scale(0.7, 0.7);
+}
+.link._now {
+  position: relative;
+  bottom: 10px;
+  transform: scale(1.5, 1.5);
+}
+.link._advertisement {
+  position: relative;
+  left: 1.8%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5px;
+  height: 70px;
+  width: 81%;
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+.link._last {
+  position: relative;
+  right: 80px;
+}
+.background {
+  background-color: whitesmoke;
+  padding-left: 50px;
+}
+.background__svg-store._hidden {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip: rect(0 0 0 0);
+}
+.form {
+  position: relative;
+  right: -6%;
+  width: 70%;
+}
+.form__border {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  right: 168px;
+  height: 40px;
+  border: 2px solid orange;
+  border-radius: 10px;
+  background-color: orange;
+}
+.form__find-wrap {
+  display: flex;
+  position: relative;
+  right: 3px;
+  bottom: 2px;
+  height: 34px;
+  border: 2px solid orange;
+  border-radius: 10px 0 0 10px;
+  background-color: orange;
+}
+.form__func-wrap {
+  position: relative;
+  right: 14px;
+  top: 2px;
+  display: flex;
+  padding-right: 5px;
+  justify-content: end;
+  align-items: center;
+  background-color: white;
+  height: 100%;
+  width: 15%;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.form__icon {
+  height: 25px;
+  width: 25px;
+  fill: gray;
+}
+.form__submit {
+  position: relative;
+  left: 1px;
+  height: 100%;
+  border: 2px solid orange;
+  border-radius: 10px;
+  background-color: orange;
+  cursor: pointer;
+}
+.form__text {
+  font-size: large;
+  cursor: pointer;
+}
+.form__find-field {
+  height: 100%;
+  border: 2px solid orange;
+  border-radius: 10px;
+}
+.form__submit-wrap {
+  position: relative;
+  bottom: 2px;
+  left: 1px;
+  width: 82px;
+  height: 40px;
+  background-color: orange;
+  border: 2px solid orange;
+  border-radius: 0 10px  10px 0;
+}
+.login {
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 150px;
+  height: 120px;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.login__link._signer {
+  position: relative;
+  bottom: 0px;
+  height: 25%;
+  background-color: #a39c9c;
+  border: 2px solid #a39c9c;
+  border-radius: 10px;
+}
+.plus {
+  height: 60px;
+}
+.plus__link {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr ;
+  align-items: center;
+  height: 60px;
+  width: 150px;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.plus__link._jumping-left {
+  position: relative;
+  right: 0;
+  transition: all 1s ease;
+}
+.plus__link._jumping-left:hover {
+  position: relative;
+  right: 30px;
+}
+.text {
+  font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
+}
+.text._gray {
+  color: gray;
+}
+.text._near {
+  position: relative;
+  top: 19px;
+  left: 7px;
+}
+.text._center {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.text._big-between {
+  position: relative;
+  bottom: 15px;
+  left: 35px;
+  font-size: x-large;
+}
+.text._main {
+  font-size: 20px;
+  color: #288eff;
+}
+.text._secondary {
+  white-space: nowrap;
+  color: #3ebeff;
+}
+.text._warning {
+  position: relative;
+  left: 7px;
+  color: orange;
+}
+.text._positioned-higher {
+  position: relative;
+  bottom: 30px;
+}
+.text._positioned-left {
+  position: relative;
+  left: -3px;
+}
+.logo {
+  position: relative;
+  bottom: 10%;
+  height: 40px;
+  width: 20%;
+}
+.logo__icon {
+  position: relative;
+  bottom: 55px;
+  right: 40px;
+  transform: scale(0.7, 0.7);
+}
+html,
+body {
+  height: 100%;
+}
+* {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+body {
+  margin: 0;
+}
