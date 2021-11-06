@@ -1,5 +1,5 @@
 {
-  "name": "nc_education_2k21",
+  "name": "Homework",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "build": "gulp build"
   },
   "keywords": [],
-  "author": "MaxSamokhin",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
