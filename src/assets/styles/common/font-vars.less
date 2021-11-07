@@ -1,16 +1,22 @@
-// задаем основные параметры шрифта в виде миксинов и переменных
+@font-family: YS Text,Helvetica Neue,Arial,sans-serif;
+@font-normal-size: 14px;
+@font-big-size: 18px;
+@font-superbig-size: 28px;
+@font-small-size: 10px;
+@font-supersmall-size: 12px;
 
-//@font-family: NotoSans, sans-serif;
-//@font-normal-size: 14px;
-//
-//.font-base() {
-//    font-family: @font-family;
-//    font-weight: 400;
-//    font-style: normal;
-//    font-size: @font-normal-size;
-//}
-//
-//.font-light() {
-//    .font-base();
-//    font-weight: 300;
-//}
+
+.font-base() {
+  font-family: @font-family;
+  font-weight: 400;
+  font-style: normal;
+  font-size: @font-normal-size;
+}
+
+.font-bold() {
+  .font-base();
+  font-size: @font-big-size;
+  font-weight: 600;
+}
+
+

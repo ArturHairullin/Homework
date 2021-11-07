@@ -23,9 +23,12 @@
                     <svg class="link__geo-icon _gray _hovered-red">
                         <use href="#icon-geo"></use>
                     </svg>
-                    <span class="link__text text _gray _positioned-left _hovered-red ">Москва</span>
+                    <span class="link__text text _main _gray _positioned-left _hovered-red _supersmall">Москва</span>
                 </a>
-                <span class="head__text text _gray">19 октября,вторник 19:23</span>
+                <span class="head__text text _gray _supersmall">19 октября,вторник</span>
+                <a class="head__date link" href="">
+                    <span class="link__text text _gray _hovered-red _positioned-left _supersmall">19:23</span>
+                </a>
             </div>
             <div class="head__bar bar">
                 <a class="bar__link link" href="">
@@ -47,9 +50,13 @@
                      <a class="head__link link" href="">
                         <span class="link__text text _main _hovered-red">Сейчас в СМИ</span>
                      </a>
-                     <a class="head__link link " href=""><span class="link__text text _secondary _hovered-red">в Москве</span> </a>
-                     <a class="head__link link " href=""><span class="news__text text _warning _hovered-red">Коронавирус</span></a>
-                     <a class="head__link link " href=""><span class="news__text text">:</span></a>
+                     <a class="head__link link " href=""><span class="link__text text _secondary-bold _hovered-red">в Москве</span> </a>
+                     <a class="head__link link " href=""><span class="link__text text _warning _hovered-red">Коронавирус</span></a>
+                     <a class="head__link link " href="">
+                         <svg class="link__icon _mini _hover-appear _position-down">
+                             <use href="#icon-dots"></use>
+                         </svg>
+                     </a>
                   </span>
                 <a class="news__link link" href="">
                     <svg class="link__icon _mini ">
@@ -86,20 +93,20 @@
                         <a class="valuta__link link" href="">
                            <span class="link__text"> USD </span>
                         </a>
-                        <span class="valuta__text text">70,84−0,07</span>
+                        <span class="valuta__text text">70,84<span class=" text _gray">-0,07</span></span>
                      </span>
                     <span class="valuta__item">
                         <a class="valuta__link link" href="">
                            <span class="link__text">EUR</span>
                         </a>
-                        <span class="valuta__text text">82,52+0,02+0,02</span>
+                        <span class="valuta__text text">82,52 <span class=" text _gray">+0,02</span></span>
                      </span>
                     <span class="valuta__item">
                         <a class="valuta__link link" href="">
                            <span class="valuta__link">НЕФТЬ</span>
 
                            </a>
-                        <span class="valuta__text text">85,86+0,95%+0,95%</span>
+                        <span class="valuta__text text">85,86 <span class=" text _gray">+0,95%</span></span>
                      </span>
                 </div>
 
@@ -112,6 +119,11 @@
                         </a>
                         <a class="head__link link" href="">
                             <span class="link__text text _secondary _hovered-red ">Карта осадков</span>
+                        </a>
+                        <a class="head__link link " href="">
+                            <svg class="link__icon _mini _hover-appear ">
+                                <use href="#icon-dots"></use>
+                            </svg>
                         </a>
                     </div>
                     <nav class="weather__info info">
@@ -146,6 +158,7 @@
                            </div>
                         </a>
 
+
                     </nav>
 
                 </div>
@@ -160,6 +173,11 @@
                         <a class="head__link link" href="">
                            <span class="link__text text _secondary _hovered-red">Расписания</span>
                         </a>
+                         <a class="head__link link " href="">
+                         <svg class="link__icon _mini _hover-appear ">
+                             <use href="#icon-dots"></use>
+                         </svg>
+                     </a>
                      </span>
                     <div class="trafic__info">
                         <a class="info__link link " href="">
@@ -169,7 +187,7 @@
                             <span class="link__text text _big-between">0</span>
                         </a>
                         <a class="info__link link" href="">
-                            <span class="link__text text _center">до 12 ч. дороги свободны</span>
+                            <span class="link__text text _nowrap ">до 12 ч. дороги свободны</span>
                         </a>
                     </div>
                 </div>
@@ -182,7 +200,7 @@
                 <svg class="link__icon _card-mod ">
                     <use href="#icon-trafic "></use>
                 </svg>
-                <span class="link__text text _positioned-higher">Войти</span>
+                <span class="link__text text _black-bold ">Войти</span>
             </a>
             <a class="login__link link" href="">
                 <svg class="link__icon _card-mod">
@@ -203,10 +221,10 @@
                 <svg class="link__icon _card-mod ">
                     <use href="#icon-trafic"></use>
                 </svg>
-                <span class="link__text text _positioned-left"> Попробовать Плюс</span>
+                <span class="link__text text _positioned-left _positioned-higher"> Попробовать Плюс</span>
             </a>
         </div>
-        <div class="second-half__korona-news"></div>
+
     </div>
 
 
@@ -273,20 +291,23 @@
 
                 <div class="form__find-wrap">
                     <input class="form__find-field" type="text" placeholder="Найдется все">
-
-                    <div class="form__func-wrap">
-                        <svg class="form__icon">
+                    <a class="form__wrap-icon link" href="">
+                        <svg class="link__icon">
                             <use href="#icon-micro"></use>
                         </svg>
-                        <svg class="form__icon">
+                    </a>
+                    <a class="form__wrap-icon link _left" href="">
+                        <svg class="link__icon">
                             <use href="#icon-keyboard"></use>
                         </svg>
-                    </div>
+                    </a>
+
 
                 </div>
                 <div class="form__submit-wrap">
                     <button class="form__submit" id="sub" type="submit">
-                        <label class="form__text text" for="sub">Найти</label>
+                    </button>
+                        <label class="form__text" for="sub">Найти</label>
 
                 </div>
             </div>
@@ -296,13 +317,62 @@
     </div>
 
     <a class="service__link  link _advertisement" href="">
-        <span class="link__text text _center">Рекламный блок</span>
+        <span class="link__text text _center _main _gray">грустный Рекламный блок</span>
     </a>
 </div>
 <div class="advert">
-    <a class="advert__link" href="">
-        <div class="advert__block"></div>
-        <div class="advert__dzen"></div>
+    <nav class="advert__dzen dzen">
+        <a class="dzen__link link" href="">
+            <svg class="link__icon  _small _positioned-center">
+                <use href="#icon-bell"></use>
+            </svg>
+        </a>
+        <span class="dzen__text text _gray ">Рекомендуем</span>
+
+        <a class="dzen__link link" href="">
+            <svg class="link__icon  _small _hovered-red">
+                <use href="#icon-bell"></use>
+            </svg>
+            <span class="link__text ">грустный Рекламный блок</span>
+        </a>
+        <a class="dzen__link link" href="">
+            <svg class="link__icon  _small _hovered-red">
+                <use href="#icon-bell"></use>
+            </svg>
+            <span class="link__text ">грустный Рекламный блок</span>
+        </a>
+        <a class="dzen__link link" href="">
+            <svg class="link__icon  _small _hovered-red">
+                <use href="#icon-bell"></use>
+            </svg>
+            <span class="link__text ">грустный Рекламный блок</span>
+        </a>
+        <a class="dzen__link link" href="">
+            <svg class="link__icon _small _hovered-red ">
+                <use href="#icon-bell"></use>
+            </svg>
+            <span class="link__text ">грустный Рекламный блок</span>
+        </a>
+        <a class="dzen__link link" href="">
+            <svg class="link__icon  _small _hovered-red ">
+                <use href="#icon-bell"></use>
+            </svg>
+            <span class="link__text ">грустный Рекламный блок</span>
+        </a>
+        <a class="dzen__link link" href="">
+            <svg class="link__icon  _small _hovered-red">
+                <use href="#icon-bell"></use>
+            </svg>
+            <span class="link__text ">грустный Рекламный блок</span>
+        </a>
+
+
+
+    </nav>
+    <a class="advert__link link" href="">
+        <div class="link__block">
+            <span class="link__text text _center _main _gray">какая-то бесполезная реклама с дзена</span>
+        </div>
     </a>
 </div>
 </body>
