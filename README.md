@@ -1,2 +1,2 @@
 # nc_education_2k21
-http://localhost:3000/
+https://hwyan.herokuapp.com
