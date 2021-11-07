@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripsts": {
+  "scripts": {
     "start": "node server",
     "start:dev": "gulp",
     "build": "gulp build"
@@ -12,8 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
-    "heroku": "^7.59.1"
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "browser-sync": "^2.26.13",
