@@ -1,12 +1,23 @@
 .head {
+  position: relative;
+  z-index: 2;
+
 
 
   &__bar {
+    position: absolute;
+    left: 900px;
     display: flex;
+    column-gap: 10px;
     height: 40px;
     width: 100px;
   }
 
+   &__link {
+    &._hover-appear {
+      opacity: 2;
+    }
+  }
 
   &__link:hover ._hovered-red {
     color: @custom-red;

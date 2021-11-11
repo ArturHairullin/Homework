@@ -1,7 +1,7 @@
 .form {
   position: relative;
-  right: -6%;
-  width: 66%;
+  right: -135px;
+  width: 920px;
 
   &__border {
     display: flex;
@@ -9,6 +9,7 @@
     position: relative;
     right: 168px;
     height: 40px;
+    width: 804px;
     border: 2px solid @custom-yellow;
     border-radius: 10px;
     background-color: @custom-yellow;
@@ -20,41 +21,44 @@
     position: relative;
     right: 3px;
     bottom: 2px;
-    //width: 600px;
+    width: 758px;
     height: 34px;
     border: none;
     border-radius: 10px 0 0 10px;
     background-color: @custom-yellow;
 
   }
-  &__wrap-icon {
+  &__wrap {
     position: absolute;
-    left: 85%;
-    bottom: 80%;
-    height: 15px;
-    width: 15px;
+    left: 634px;
+    top: 4px;
+    display: flex;
+    column-gap: 10px;
+  }
+  &__icon {
     fill: @custom-grey;
-    &._left {
-      left: 90%;
-    }
     &:hover {
       fill: @custom-gray;
     }
+  }
+  &__icon-svg {
+    height: 35px;
+    width: 35px;
   }
   &__submit {
 
     position: relative;
     z-index: -99;
-    height: 100%;
-    cursor:pointer;
+
   }
   &__text {
     position: absolute;
-    right: -6px;
+    right: 13px;
     top:22%;
+    cursor: pointer;
     .font-base();
     font-size: @font-big-size;
-    cursor: pointer;
+
   }
   &__find-field {
     position: relative;
@@ -62,6 +66,7 @@
     left: 4px;
     .font-base();
     height: 100%;
+    width: 100%;
     border: none;
     border-radius: 10px;
 
@@ -79,6 +84,7 @@
     background-color: @custom-yellow;
     border: 2px solid @custom-yellow;
     border-radius: 0 10px  10px 0;
+    cursor:pointer;
     &:hover {
       background-color: @custom-orange;
       border: 2px solid @custom-orange;

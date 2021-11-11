@@ -1,17 +1,21 @@
 .dzen {
-  position: relative;
-  left: 56%;
-  top:-80px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  background-color: white;
-  border: 2px solid white;
+  row-gap: 10px;
+  background-color: @custom-white;
+  border: 2px solid @custom-white;
   border-radius: 10px;
   width: 280px;
   height: 500px;
-  padding-left: 10px;
+  padding-left: 25px;
+  box-shadow:  0 0 10px @custom-grey;
+  &__wrap {
 
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   &__text {
     .font-base();
     font-size: @font-big-size;
