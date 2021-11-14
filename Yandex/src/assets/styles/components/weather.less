@@ -2,24 +2,28 @@
 
   height: 100px;
 
+  &:hover .head .link ._hover-appear {
+    opacity: 2;
+  }
+
   &__link {
     display: flex;
   }
+
   &__head {
-    display:inline-grid;
+    display: inline-grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     height: 30px;
   }
 
   &__info {
+
     position: relative;
     bottom: 35px;
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-
-
+    display: flex;
     height: 70px;
+
 
   }
 }

@@ -1,19 +1,30 @@
 .text {
-  font-family: 'YS Text','Helvetica Neue',Arial,sans-serif;
+  .font-base();
 
-
-  &._gray {
-    color: @custom-gray;
-
+  &._supersmall {
+    .font-bold-supersmall(400);
+  }
+  &._hovered-red {
+    cursor: pointer;
   }
 
+
+
+
   &._near {
+    .font-bold-big(400);
     position: relative;
     top: 19px;
-    left: 7px;
+    left: 24px;
+  }
+  &._nowrap {
+    position: relative;
+    bottom: 22px;
+    white-space: nowrap;
   }
 
   &._center {
+
     display: table-cell;
     vertical-align: middle;
     text-align: center;
@@ -23,13 +34,30 @@
     position: relative;
     bottom: 15px;
     left: 35px;
-    font-size: x-large;
+    .font-bold-superbig(400);
   }
   &._main {
-    font-size: 20px;
+    .font-bold(600);
+
     color: @custom-blue;
   }
+  &._secondary-bold {
+    .font-bold(600);
+    white-space: nowrap;
+
+
+    color: @custom-lightblue;
+
+  }
+  &._black-bold {
+    position: relative;
+    bottom: 30px;
+    left: 20px;
+    .font-bold(600);
+
+  }
   &._secondary {
+    .font-base();
     white-space: nowrap;
 
 
@@ -38,16 +66,28 @@
   }
   &._warning {
     position: relative;
-    left: 7px;
+    left: 11px;
     color: @custom-orange;
   }
   &._positioned-higher {
     position: relative;
     bottom: 30px;
+    left:-10px;
   }
   &._positioned-left {
+    white-space: nowrap;
     position: relative;
     left: -3px;
   }
 
+  &._gray {
+    color: @custom-gray;
+
+  }
+
+  &._hovered-red {
+    &:hover {
+      color: @custom-red;
+    }
+  }
 }
