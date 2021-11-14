@@ -13,10 +13,31 @@
   font-size: @font-normal-size;
 }
 
-.font-bold() {
+.font-bold( @weight) {
+  .font-base();
+  font-size: @font-normal-size;
+  font-weight: @weight;
+}
+.font-bold-big(@weight) {
   .font-base();
   font-size: @font-big-size;
-  font-weight: 600;
+  font-weight: @weight;
 }
+.font-bold-superbig(@weight) {
+  .font-base();
+  font-size: @font-superbig-size;
+  font-weight: @weight;
+}
+.font-bold-small(@weight) {
+  .font-base();
+  font-size: @font-small-size;
+  font-weight: @weight;
+}
+.font-bold-supersmall(@weight) {
+  .font-base();
+  font-size: @font-supersmall-size;
+  font-weight: @weight;
+}
+
 
 

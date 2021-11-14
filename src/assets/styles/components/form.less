@@ -40,6 +40,12 @@
     &:hover {
       fill: @custom-gray;
     }
+    &._hidden-icon {
+      position: absolute;
+      left: 690px;
+      top: 3px;
+      display: none;
+    }
   }
   &__icon-svg {
     height: 35px;
@@ -65,11 +71,21 @@
     top: 4px;
     left: 4px;
     .font-base();
+    padding-left: 10px;
+    padding-right: 40px;
     height: 100%;
     width: 100%;
     border: none;
     border-radius: 10px;
 
+    &:not(:placeholder-shown)+ .form__wrap {
+      display: none;
+
+    }
+    &:not(:placeholder-shown)~ ._hidden-icon {
+      display: block;
+
+    }
     &:focus {
       outline: none;
     }

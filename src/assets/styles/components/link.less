@@ -69,17 +69,20 @@
     }
 
     &._hover-appear {
+      height: 22px;
+      width: 22px;
+      fill: @custom-grey;
       position: relative;
-      right: 2px;
+      right: 1px;
       top: -2px;
-      opacity: 0.1;
+      opacity: 0;
       transition: all 0.2s ease-out;
 
     }
 
     &._jumping {
       bottom: 0;
-      transition: all 0.5s ease-out;
+      transition: all 0.2s ease-out;
     }
 
     &._small {
@@ -150,7 +153,8 @@
     border-radius: 10px;
     box-shadow:  0 0 10px @custom-grey;
     &:hover::before {
-      .font-bold();
+      .font-bold-big(600);
+
       content: "здесь могла быть ваша реклама поэтому рекламный блок грустный";
     }
 
