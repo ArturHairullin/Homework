@@ -1,2 +1,2 @@
 # nc_education_2k21
-https://hwyan.herokuapp.com
+https://secret-sea-79800.herokuapp.com/
