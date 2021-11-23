@@ -1,0 +1,90 @@
+.widget {
+  display: flex;
+  height: 52px;
+  width: 270px;
+  align-items: center;
+  column-gap: 6px;
+  padding-left: 20px;
+  padding-top: 4px;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow:  0 0 10px @custom-grey;
+  &._games {
+    display: flex;
+    height: 230px;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  &._corona {
+    padding-top: 10px;
+    display: flex;
+    align-items: start;
+    height: 200px;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  &._weather {
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: start;
+
+  }
+  &__weather {
+    display: flex;
+    column-gap: 10px;
+  }
+  &__head {
+    position: relative;
+    right: 10px;
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__icon {
+    height: 70%;
+    width: 15%;
+  }
+  &__wrap {
+    height: 70%;
+    width: 60%;
+    display: flex;
+    row-gap: 5px;
+    flex-direction: column;
+  }
+  &__game {
+    position: relative;
+    right: 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    padding-left: 20px;
+    padding-top: 4px;
+  }
+  &__play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:70px;
+    height: 20px;
+    background-color: @custom-grey;
+    border: 1px solid @custom-grey;
+    border-radius: 10px;
+    &:hover {
+      background-color: @custom-gray;
+      border: 1px solid @custom-gray;
+
+    }
+  }
+  &__line {
+    position: relative;
+    right: 10px;
+    width: 260px;
+    height: 1px;
+    border-bottom: 1px solid @custom-grey;
+  }
+}

@@ -1,0 +1,23 @@
+.columns {
+  padding-left: 35px;
+  padding-right: 35px;
+
+  display: flex;
+  column-gap: 50px;
+  height: 2000px;
+
+  &__content-column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    height: 100%;
+    &._first {
+      height: 2000px;
+      width: 270px;
+    }
+    &._second {
+      height: 2000px;
+      width: 920px;
+    }
+  }
+}

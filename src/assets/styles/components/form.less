@@ -1,0 +1,106 @@
+.form {
+  position: relative;
+  right: -20px;
+  width: 890px;
+  &__border {
+    box-sizing: border-box;
+    display: flex;
+    height: 40px;
+    width: 890px;
+    border: 2px solid @custom-orange;
+    border-radius: 10px;
+    background-color: @custom-orange;
+    transition: all 0.2s ease;
+    &:hover {
+      border: 3px solid @custom-orange;
+      border-radius: 10px;
+    }
+
+  }
+
+
+
+  &__wrap {
+    position: absolute;
+    left: 630px;
+    top: 12px;
+    display: flex;
+    column-gap: 10px;
+  }
+  &__icon {
+    position: absolute;
+    top: 2px;
+    left: 1px;
+
+    fill: @custom-grey;
+
+    &._hidden-icon {
+      position: absolute;
+      left: 750px;
+      top: 0px;
+      display: none;
+    }
+  }
+  &__icon-svg {
+    height: 35px;
+    width: 35px;
+  }
+  &__submit {
+
+    position: relative;
+    z-index: -99;
+
+  }
+  &__text {
+    position: absolute;
+    right: 29px;
+    top:22%;
+    cursor: pointer;
+    .font-base();
+    font-size: @font-big-size;
+
+  }
+  &__find-field {
+    box-sizing: border-box;
+    .font-base();
+    padding-left: 30px;
+    padding-right: 16%;
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius:  10px 0 0 10px;
+    &:not(:placeholder-shown)+ .form__wrap {
+      display: none;
+
+    }
+    &:not(:placeholder-shown)~ ._hidden-icon {
+      display: block;
+
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__submit-wrap {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 794px;
+    width: 110px;
+    height: 36px;
+    background-color: @custom-orange;
+    border: 2px solid @custom-orange;
+    border-radius: 0 10px  10px 0;
+    cursor:pointer;
+    &:hover {
+      background-color: @custom-darkorange;
+      border: 2px solid @custom-darkorange;
+      border-radius: 0 10px  10px 0;
+
+
+    }
+  }
+}
+
+

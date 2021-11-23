@@ -1,0 +1,29 @@
+.advert {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 330px;
+  height: 220px;
+  box-shadow:  0 0 10px @custom-grey;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  &:hover {
+    box-shadow:  0 0 10px @custom-gray;
+  }
+  &._rectangle {
+    position: relative;
+    left: 22px;
+    bottom: 66px;
+    height: 60px;
+    width: 530px;
+
+  }
+  &._complicated {
+    width: 270px;
+    height: 270px;
+
+  }
+}

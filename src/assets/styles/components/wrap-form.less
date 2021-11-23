@@ -1,0 +1,48 @@
+.wrap-form {
+  position: relative;
+  top: 10px;
+  margin-bottom: 10px;
+  height: 330px;
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+  background-color: @custom-white;
+  border: 2px solid @custom-white;
+  border-radius: 10px;
+  box-shadow:  0 0 10px @custom-grey;
+  &__links {
+    width: 200px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__create {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 20px;
+    background-color: @custom-grey;
+    border: 1px solid @custom-grey;
+    border-radius: 10px;
+    &:hover {
+      background-color: @custom-gray;
+      border: 1px solid @custom-gray;
+
+    }
+
+  }
+  &__sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 20px;
+    color: @custom-white;
+    background-color: @custom-blue;
+    border: 1px solid @custom-blue;
+    border-radius: 10px;
+  }
+}
