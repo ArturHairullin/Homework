@@ -439,6 +439,28 @@
         <span class="text _gray"> &#169 Яндекс</span>
     </div>
 </footer>
+<script>
+    async function populate() {
+        while(true) {
+            let windowRelativeBottom = document.documentElement.getBoundingClientRect().bottom;
+            if (windowRelativeBottom > document.documentElement.clientHeight + 100) break;
+            try {
+                let response = await fetch(`https://github.com/ArturHairullin/Homework/blob/main/testfile.html`);
+                document.body.insertAdjacentHTML("beforeend", `${response.json}`);
+            }
+            catch (err) {
+                document.body.insertAdjacentHTML("beforeend", `<a class="advert__link link" href="">
+    <div class="link__block">
+        <span class="link__text text _center _main _gray">какая-то бесполезная реклама с дзена,но не с сервера</span>
+    </div>
+</a>`);
+            }
+        }
+    }
 
+window.addEventListener('scroll', populate);
+
+populate();
+</script>
 </body>
 </html>
