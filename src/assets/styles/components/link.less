@@ -6,16 +6,24 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: white;
-    border: 2px solid white;
+    background-color: @custom-white;
+    border: 2px solid @custom-white;
     border-radius: 10px;
     width: 600px;
     height: 500px;
     box-shadow:  0 0 10px @custom-grey;
   }
   &._underline {
+    cursor: pointer;
     &:hover {
       text-decoration: @custom-blue underline;
+    }
+  }
+  &._underline-black {
+    width: 10px;
+    cursor: pointer;
+    &:hover {
+      text-decoration: @custom-black underline;
     }
   }
 
@@ -144,7 +152,8 @@
     display: block;
     width: 33%;
     position: relative;
-    right: 30px;
+    right: 40px;
+    bottom: 35px;
     transform: scale(0.7, 0.7);
   }
 

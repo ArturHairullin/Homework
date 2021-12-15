@@ -86,11 +86,12 @@
   border-bottom: 1px solid #b5b5b5;
 }
 .head._widget {
+  display: flex;
+  padding-left: 0px;
   position: relative;
-  bottom: 100px;
-  right: 20px;
-  border-top: 1px solid #b5b5b5;
-  width: 200px;
+  right: 10px;
+  width: 270px;
+  border-bottom: 1px solid #b5b5b5;
 }
 .columns {
   padding-left: 35px;
@@ -127,8 +128,18 @@
   height: 500px;
   box-shadow: 0 0 10px #b5b5b5;
 }
+.link._underline {
+  cursor: pointer;
+}
 .link._underline:hover {
   text-decoration: #2845ff underline;
+}
+.link._underline-black {
+  width: 10px;
+  cursor: pointer;
+}
+.link._underline-black:hover {
+  text-decoration: black underline;
 }
 .link._underlined-main {
   position: relative;
@@ -230,7 +241,8 @@
   display: block;
   width: 33%;
   position: relative;
-  right: 30px;
+  right: 40px;
+  bottom: 35px;
   transform: scale(0.7, 0.7);
 }
 .link._now .link__icon {
@@ -276,6 +288,9 @@
   border-radius: 10px;
 }
 .background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #fafafa;
 }
 .background__svg-store._hidden {
@@ -307,26 +322,28 @@
 }
 .form__wrap {
   position: absolute;
-  left: 630px;
+  left: 650px;
   top: 12px;
   display: flex;
   column-gap: 10px;
 }
+.form__wrap:hover ._hovered-lined {
+  text-decoration: underline;
+}
 .form__icon {
   position: absolute;
-  top: 2px;
-  left: 1px;
+  top: 8px;
+  left: 6px;
   fill: #b5b5b5;
 }
 .form__icon._hidden-icon {
   position: absolute;
-  left: 750px;
-  top: 0px;
+  left: 760px;
   display: none;
 }
 .form__icon-svg {
-  height: 35px;
-  width: 35px;
+  height: 25px;
+  width: 25px;
 }
 .form__submit {
   position: relative;
@@ -431,52 +448,72 @@
 }
 .widget._games {
   display: flex;
-  height: 230px;
+  height: 260px;
   flex-direction: column;
   row-gap: 10px;
 }
 .widget._corona {
   padding-top: 10px;
   display: flex;
-  align-items: start;
-  height: 200px;
+  align-items: flex-start;
+  height: 180px;
   flex-direction: column;
-  row-gap: 10px;
+  row-gap: 20px;
 }
 .widget._weather {
-  height: 70px;
+  height: 140px;
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
-  align-items: start;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .widget__weather {
   display: flex;
   column-gap: 10px;
+  align-items: flex-start;
+  height: 50px;
 }
 .widget__head {
+  display: flex;
+  justify-content: space-between;
   position: relative;
+  z-index: 2;
   right: 10px;
   height: 20px;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
 }
 .widget__icon {
   height: 70%;
   width: 15%;
 }
-.widget__wrap {
+.widget__icon-center {
+  position: relative;
+  left: 100px;
   height: 70%;
+  width: 15%;
+}
+.widget__wrap-left {
+  position: relative;
+  left: -10px;
+  height: 40px;
   width: 60%;
   display: flex;
   row-gap: 5px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.widget__wrap {
+  height: 40px;
+  width: 60%;
+  display: flex;
+  row-gap: 5px;
+  align-items: flex-start;
   flex-direction: column;
 }
 .widget__game {
   position: relative;
   right: 20px;
-  height: 40px;
+  height: 50px;
   display: flex;
   align-items: center;
   column-gap: 6px;
@@ -500,7 +537,7 @@
 .widget__line {
   position: relative;
   right: 10px;
-  width: 260px;
+  width: 270px;
   height: 1px;
   border-bottom: 1px solid #b5b5b5;
 }
@@ -650,6 +687,7 @@
   left: -3px;
 }
 .text._gray {
+  white-space: nowrap;
   font-family: YS Text, Helvetica Neue, Arial, sans-serif;
   font-style: normal;
   font-size: 14px;
@@ -667,7 +705,19 @@
 .text._hovered-red:hover {
   color: #ff2507;
 }
+.text._hovered-lined {
+  white-space: nowrap;
+  font-family: YS Text, Helvetica Neue, Arial, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #2845ff;
+}
 .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   bottom: 2px;
   height: 90px;
@@ -677,10 +727,7 @@
   background-color: #2845ff;
 }
 .logo__icon {
-  position: relative;
-  bottom: 55px;
-  right: 64px;
-  transform: scale(0.7, 0.7);
+  fill: white;
 }
 .news {
   display: flex;
@@ -710,16 +757,20 @@
   display: flex;
 }
 .header {
-  padding-right: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 30px;
+  width: 100%;
+  padding-top: 3px;
 }
 .header__wrap {
   position: relative;
   z-index: 2;
   display: flex;
+}
+.header__login {
+  margin-right: 20px;
 }
 .advert-block {
   position: relative;
@@ -854,9 +905,6 @@
 html,
 body {
   height: 100%;
-}
-* {
-  transition: all 0.2s ease;
 }
 a {
   text-decoration: none;
