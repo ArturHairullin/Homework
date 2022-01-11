@@ -1,39 +1,17 @@
 .text {
   .font-base();
 
-  &._big-bold {
-    color: @custom-black;
-    .font-bold-superbig(600);
-  }
   &._supersmall {
     .font-bold-supersmall(400);
   }
   &._hovered-red {
     cursor: pointer;
   }
-  &._hover-background {
-    border: 6px solid @custom-backwhite;
-  }
-
-
-
-
-  &._remember {
-    position: relative;
-    right: 3px;
-    .font-bold-small(400);
-    color: @custom-gray;
-  }
-  &._forget {
-    position: relative;
-    left: 20px;
-    .font-bold-small(400);
-    color: @custom-gray;
-    text-decoration: underline;
-    cursor: pointer;
-    &:hover {
-      text-decoration: none;
-    }
+  &._tag {
+    .font-bold(700);
+    text-transform: uppercase;
+    color: @custom-orange;
+    margin-inline-end: .66rem;
   }
   &._near {
     .font-bold-big(400);
@@ -42,6 +20,8 @@
     left: 24px;
   }
   &._nowrap {
+    position: relative;
+    bottom: 22px;
     white-space: nowrap;
   }
 
@@ -62,15 +42,6 @@
     .font-bold(600);
 
     color: @custom-blue;
-  }
-  &._main-gray {
-    .font-bold(600);
-
-    color: @custom-grey;
-  }
-  &._title {
-    color: @custom-black;
-
   }
   &._secondary-bold {
     .font-bold(600);
@@ -95,9 +66,6 @@
     color: @custom-lightblue;
 
   }
-  &._news {
-    color: @custom-blue;
-  }
   &._warning {
     position: relative;
     left: 11px;
@@ -115,23 +83,13 @@
   }
 
   &._gray {
-    white-space: nowrap;
-    .font-bold-small(400);
     color: @custom-gray;
 
-  }
-  &._form {
-    .font-bold-small(400);
   }
 
   &._hovered-red {
     &:hover {
       color: @custom-red;
     }
-  }
-  &._hovered-lined {
-    white-space: nowrap;
-    .font-bold-small(400);
-    color: @custom-blue;
   }
 }

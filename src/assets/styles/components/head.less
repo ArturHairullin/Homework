@@ -1,14 +1,23 @@
 .head {
-  display: flex;
-  column-gap: 22px;
-  padding-top: 10px;
-  padding-left: 20px;
   position: relative;
   z-index: 2;
 
 
 
+  &__bar {
+    position: absolute;
+    left: 900px;
+    display: flex;
+    column-gap: 10px;
+    height: 40px;
+    width: 100px;
+  }
 
+   &__link {
+    &._hover-appear {
+      opacity: 2;
+    }
+  }
 
   &__link:hover ._hovered-red {
     color: @custom-red;
@@ -20,27 +29,6 @@
     left: -50px;
     margin-top: 10px;
     margin-left: 10px;
-  }
-  &__wrap-pulse {
-    position: relative;
-    bottom: 4px;
-  }
-  &._underlined {
-    height: 25px;
-    align-items: center;
-    padding: 0;
-    margin-left: 23px;
-    width: 895px;
-    border-bottom: 1px solid @custom-grey ;
-
-  }
-  &._widget {
-    display: flex;
-    padding-left: 0px;
-    position: relative;
-    right: 10px;
-    width: 270px;
-    border-bottom: 1px solid @custom-grey;
   }
 
 }

@@ -1,0 +1,70 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  min-height: 350px;
+  box-shadow: -2rem 0 3rem -2rem #000;
+  margin: 0;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: linear-gradient(85deg, @custom-gray, @custom-black);
+  color: @custom-white;
+  transition: .2s;
+  &__time {
+    display: block;
+    margin: 0 0 .25rem;
+    color: @custom-grey;
+  }
+  &__title {
+    color: @custom-white ;
+    .font-bold-big(400);
+  }
+  &__tags {
+    line-height: 1;
+    margin: 0 0 .5rem;
+  }
+  &__author {
+    margin-block-start: auto;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: .5rem;
+    align-items: center;
+    color: #565656;
+    line-height: 1.3;
+    padding-top: .5rem;
+    &-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: .5rem;
+    }
+    &-name {
+      .font-base();
+      color: @custom-white;
+    }
+  }
+  &._hover {
+    &:hover {
+      transform: translate(-.5rem,-1rem) rotate(3deg);
+      margin-right: 130px;
+    }
+  }
+  &._big {
+    position: relative;
+    top: 45px;
+    height: 400px;
+    width: 200px;
+    border: 5px solid @custom-red;
+    border-radius: 12px;
+  }
+}
+@media(max-width: 1200px){
+  .card {
+    min-width: 200px;
+    &._hover {
+      &:not(:first-child):hover {
+        transform: translateY(-1rem);
+      }
+    }
+  }
+}

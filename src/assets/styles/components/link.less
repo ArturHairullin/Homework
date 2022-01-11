@@ -1,8 +1,11 @@
 .link {
   font-family: 'YS Text', 'Helvetica Neue', Arial, sans-serif;
-  //color: @custom-blue;
+  color: @custom-black;
+
 
   &__block {
+    margin-bottom: 30px;
+    margin-left: 25px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -12,38 +15,6 @@
     width: 600px;
     height: 500px;
     box-shadow:  0 0 10px @custom-grey;
-  }
-  &._underline {
-    cursor: pointer;
-    &:hover {
-      text-decoration: @custom-blue underline;
-    }
-  }
-  &._underline-black {
-    width: 10px;
-    cursor: pointer;
-    &:hover {
-      text-decoration: @custom-black underline;
-    }
-  }
-
-  &._underlined-main {
-    position: relative;
-    top: 1px;
-    box-sizing: border-box;
-    height: 25px;
-    border-bottom: 2px solid @custom-blue;
-  }
-  &._underlined {
-    position: relative;
-    top: 1px;
-    box-sizing: border-box;
-    height: 25px;
-    color: @custom-black;
-    &:hover {
-
-      border-bottom: 2px solid @custom-gray;
-    }
   }
 
   &__geo-icon {
@@ -152,8 +123,7 @@
     display: block;
     width: 33%;
     position: relative;
-    right: 40px;
-    bottom: 35px;
+    right: 30px;
     transform: scale(0.7, 0.7);
   }
 
@@ -192,16 +162,13 @@
 
   }
 
-
+  & :hover {
+    color: @custom-red;
+  }
 
   &:hover ._hovered-red {
     color: @custom-red;
     fill: @custom-red;
-  }
-  &:hover ._hover-background {
-    background-color: @custom-grey;
-    border: 6px solid @custom-grey;
-    border-radius: 10px;
   }
 }
 

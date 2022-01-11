@@ -1,9 +1,26 @@
 .background {
+  background-color: @custom-backwhite;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: @custom-backwhite;
-
+  --featured-img: linear-gradient(180deg,@custom-white,@custom-black);
+  --bg-blend-mode: overlay;
+  background-color: @custom-black;
+  background-position: top 58px center;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(50% 50% at top center,rgba(0,0,0,.66),@custom-black),var(--featured-img);
+  background-size: 120% 2000px,100% 2000px;
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: @custom-gray;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px hsl(0deg 0% 100% / 25%), inset -2px -2px 2px rgb(0 0 0 / 25%);
+  }
+  &::-webkit-scrollbar-track {
+    background: linear-gradient(90deg,@custom-gray,@custom-gray 1px,@custom-black 0,@custom-black);
+  }
   &__svg-store {
     &._hidden {
       .hidden();

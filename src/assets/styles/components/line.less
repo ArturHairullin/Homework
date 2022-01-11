@@ -1,0 +1,25 @@
+.line {
+  display: list-item;
+  &::marker {
+    color: transparent;
+  }
+  &__text {
+    .font-bold(600);
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    height: 100%;
+    color:@custom-white;
+    padding: 1.2rem 1rem;
+    overflow: hidden;
+    &:hover {
+      color: @custom-orange;
+      background: hsla(0,0%,100%,.1);
+      opacity: 1;
+    }
+  }
+}
